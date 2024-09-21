@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- ---fontawesome--- -->
+    <script
+      src="https://kit.fontawesome.com/ff8bc88cca.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <a href="#" class="href">
+        <i class="upwardarrow fa-solid fa-arrow-up"></i
+      ></a>
+    </div>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a href="#" class="href">
+            <img src="./images/NIT-logo.jpeg" alt="" class="logo"
+          /></a>
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#certificate">certificate</a></li>
+            <li><a href="#my">Projects</a></li>
+            <li><a href="#contact">Contacts</a></li>
+            <i onclick="closemenu()" class="fas fa-solid fa-xmark"></i>
+          </ul>
+          <i onclick="openmenu()" class="fas fa-solid fa-bars"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h2>Hi, I am <span>Himanshu</span></h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----about----- -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="images/IMG_20240627_161436-removebg-preview.png"
+              alt="Himanshu Tiwari"
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello! I'm Himanshu Tiwari, a passionate and dedicated Full-Stack Developer currently pursuing my Bachelor of Technology at the National Institute of Technology, Raipur. With a strong foundation in computer science and a keen interest in web development, I strive to create intuitive, efficient, and user-friendly applications.
+            </p>
+            <p>
+              I have a solid background in both front-end and back-end development, with experience in various technologies and tools. I'm always exploring new technologies and aim to stay at the forefront of the web development field.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>HTML</span></li>
+                <li><span>CSS</span></li>
+                <li><span>JavaScript</span></li>
+                <li><span>ReactJS</span></li>
+                <li><span>NodeJS</span></li>
+                <li><span>ExpressJS</span></li>
+                <li><span>MongoDB</span></li>
+                <li><span>C++</span></li>
+                <li><span>Python</span></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021-2025</span>
+                  <p>BTech from NIT Raipur</p>
+                </li>
+                <li>
+                  <span>2018-2020</span>
+                  <p>Intermediate from SMT Nagwanshi Kuldeep High School</p>
+                </li>
+                <li>
+                  <span>2015-2018</span>
+                  <p>Matriculation from ST Paul School</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- ---------project-------- -->
+    <div id="my">
+      <div class="container">
+        <h1 class="sub-title">My project</h1>
+        <div class="project-list">
+          <div class="project">
+            <img src="./images/Book-Havenfinal.png" />
+            <h3>BookHaven app</h3>
+            <div class="layer">
+              <p>
+                MERN Stack Project
+              </p>
+              <a href="https://github.com/Himanshu554466/Shopping-Cart"
+                ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="./images/score-keeperfinal.png" />
+            <h3>Score-Keeper app</h3>
+            <div class="layer">
+              <p>
+                This project based on the React<br />
+                we used the cdn link from the react official website.
+              </p>
+              <a href="https://himanshu554466.github.io/Score_keeper/"
+                ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="./images/blog-app.png" />
+            <h3>Blog app</h3>
+            <div class="layer">
+              <p>
+                This project based on the React<br />
+                we also connect database firebase as a backend.
+              </p>
+              <a href="#"
+                ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="button">
+            <a
+              href="https://github.com/Himanshu554466?tab=repositories"
+              class="href"
+              ><button type="button">See More...</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------certificate------------ -->
+
+    <div class="container">
+      <h1 class="text">certificates</h1>
+      <div id="certificate">
+        <div class="item">
+          <img src="./images/ss-c++.png" alt="" srcset="" />
+          <a href="./images/introduction-to-c++.pdf" download class="href"
+            ><i class="fa-solid fa-download font"></i
+          ></a>
+        </div>
+        <div class="item">
+          <img src="./images/ss-dsa.png" alt="" srcset="" />
+          <a href="./images/DSA.pdf" class="href"
+            ><i class="fa-solid fa-download font"></i
+          ></a>
+        </div>
+        <div class="item">
+          <img src="./images/ss-frontend.png" alt="" srcset="" />
+          <a href="./images/Frontend.pdf" class="href"
+            ><i class="fa-solid fa-download font"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------contact------ -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h3 class="sub-title">Contact Me</h3>
+            <p><i class="fa-solid fa-envelope"></i>himanshu554466@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+91-9835392033</p>
+            <div class="social-icons">
+              <a href="https://twitter.com/hims_tiwari"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/himanshu-tiwari-324316203/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Himanshu554466"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="text"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn2">submit</button>
+            </form>
+            <span id="msg">hello</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------resume--------- -->
+    <div class="container">
+      <div class="resume">
+        <button class="btn">
+          <a href="./images/SDE (3).pdf" download class=""
+            >Download CV</a
+          >
+        </button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright"><p>Copyright @ himanshu.</p></div>
+    </div>
+
+    <!-- -------javaScript------- -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      var sidemeu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemeu.style.right = "0px";
+        // sidemeu.style.display="block";
+        console.log("Function called");
+      }
+      function closemenu() {
+        // sidemeu.style.right = "-200";
+        sidemeu.style.right = "-200px";
+        // sidemeu.style.display="none";
+        console.log("Function calle!d");
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxmIlwZTh5OrKfzO1y6aHjlaPaPQN1pRStAT8VktPACcwozs_r_X9bqiTYIwc6eva1NkA/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 2000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
